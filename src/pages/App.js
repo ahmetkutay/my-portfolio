@@ -1,20 +1,20 @@
-import './App.css';
+import "./App.css";
+import HomePage from "./homepage/homepage";
+import Header from "../component/Header/header";
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Header/>
+            <Routes>
+                <Route path="/" exact element={<HomePage/>}/>
+                <Route path="/blog" element={<HomePage/>}/>
+                <Route path="/about" element={<HomePage/>}/>
+                <Route path="/contact" element={<HomePage/>}/>
+            </Routes>
+        </Router>
+    );
 }
 
 export default App;

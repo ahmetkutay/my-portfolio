@@ -1,0 +1,12 @@
+.image-me {
+    border-radius: 50%;
+    height: 300px;
+    width: 300px;
+}
+
+.text-color-fade {
+    background: linear-gradient(to right, red, purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
