@@ -13,15 +13,15 @@ const Header = (props) => {
                     <NavLink to="/" activeStyle>
                         Home
                     </NavLink>
-                    <NavLink to="/blog" activeStyle>
+                    {/*<NavLink to="/blog" activeStyle>
                         Blog
-                    </NavLink>
+                    </NavLink>*/}
                     <NavLink to="/about" activeStyle>
                         About
                     </NavLink>
-                    <NavLink to="/contact" activeStyle>
+                    {/*<NavLink to="/contact" activeStyle>
                         Contact Me
-                    </NavLink>
+                    </NavLink>*/}
                 </NavMenu>
             </Nav>
         </>
